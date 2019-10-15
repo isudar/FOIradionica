@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Zadaca1</string>
+    <string name="app_name">FOI</string>
+    <string name="turing_name">Alan Turing</string>
     <string name="turing">Alan Mathison Turing, britanski matematičar, kriptograf, i teoretičar računalstva.
         Alan Turing je 1950. objavio provokativan Turingov test o kojem se i dan danas vode rasprave.
         Rođenje: 23. lipnja 1912., Maida Vale
@@ -16,6 +17,7 @@
         Djeca: Benjamin Herschel Babbage, Henry Prevost.
         Obrazovanje: Sveučilište u Cambridgeu, Peterhouse, Cambridge, Trinity College, Cambridge
     </string>
+    <string name="bebidz_name">Charles Babbage</string>
     <string name="grace"> Grace Hopper, osmislila je prvi kompailer!
         Rođenje: 9. prosinca 1906., New York City, New York, SAD
         Preminula: 1. siječnja 1992., Arlington
@@ -23,9 +25,10 @@
         Knjige: Understanding Computers, više…
         Nagrade: Predsjednička medalja za slobodu, više…
         Obrazovanje: Sveučilište Yale (1934.), Sveučilište Yale (1930.), Vassar College (1924.–1928.), Wardlaw-Hartridge School</string>
+    <string name="grace_name">Grace Hopper</string>
     <string name="qTuring">Sometimes it is the people no one can imagine anything of who do the things no one can imagine.</string>
 
     <string name="qBebidz">At each increase of knowledge, as well as on the contrivance of every new tool, human labour becomes abridged.</string>
     <string name="qGrace">We must include in any language with which we hope to describe complex data-processing situations the capability for describing data.</string>
-    <string name="inspiririraju_i_ljudi">Inspiririrajući ljudi</string>
+    <string name="inspiririraju_i_ljudi">Inspirirajući ljudi</string>
 </resources>

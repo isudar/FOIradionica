@@ -29,9 +29,6 @@ class MainActivity : Activity(), View.OnClickListener {
         ivBebidz.setOnClickListener(this)
         ivGrace.setOnClickListener(this)
 
-        tvTuring.setOnClickListener(this)
-        tvBebidz.setOnClickListener(this)
-
         tvTuring.text = Turing.bio
         ivTuring.setImageResource(Turing.profilePicute)
         tvBebidz.text = Bebidz.bio
@@ -41,29 +38,29 @@ class MainActivity : Activity(), View.OnClickListener {
     }
 
     private fun initializeData(){
+        Turing.name = resources.getString(R.string.turing_name)
         Turing.bio = resources.getString(R.string.turing)
         Turing.quote = resources.getString(R.string.qTuring)
         Turing.profilePicute = R.drawable.turing
 
+        Bebidz.name = resources.getString(R.string.bebidz_name)
         Bebidz.bio = resources.getString(R.string.bebidz)
         Bebidz.quote = resources.getString(R.string.qBebidz)
         Bebidz.profilePicute = R.drawable.bebidz
 
-        Grace = InspiringPerson(resources.getString(R.string.grace),resources.getString(R.string.qGrace), R.drawable.grace )
+        Grace = InspiringPerson(resources.getString(R.string.grace_name), resources.getString(R.string.grace),resources.getString(R.string.qGrace), R.drawable.grace )
     }
 
     override fun onClick(view: View) {
 
         when (view) {
-            ivTuring -> {
-                this.displayToast(Turing.quote)
-            }
+            ivTuring -> displayToast(Turing.quote)
 
-            ivBebidz -> {
-                this.displayToast(Bebidz.quote)
-            }
 
-            ivGrace -> this.displayToast(Grace.quote)
+            ivBebidz -> displayToast(Bebidz.quote)
+
+
+            ivGrace -> displayToast(Grace.quote)
 
             tvTuring -> { openDetailsFragment()}
             tvBebidz -> { openDetailsFragment()}
@@ -71,10 +68,13 @@ class MainActivity : Activity(), View.OnClickListener {
         }
     }
 
-    private fun openDetailsFragment(personTag : String = EMPTY_STRING) {
-        val openDetails = Intent(this, DetailsActivity::class.java)
-        // TODO send userParams
-        startActivity(openDetails)
+    //private fun openDetailsFragment(name : String, image: Int , descrption : String ) {
+
+    private fun openDetailsFragment() {
+       // val openDetails = Intent(this, DetailsActivity::class.java)
+        //TODO POSLATI PARAMETRE U DETAILS SCREEN
+
+        //startActivity(openDetails)
 
     }
 

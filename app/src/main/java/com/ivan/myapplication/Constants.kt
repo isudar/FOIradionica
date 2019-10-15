@@ -1,3 +1,7 @@
 package com.ivan.myapplication
 
 const val EMPTY_STRING = ""
+
+const val EXTRA_PERSON_IMAGE = "EXTRA_PERSON_IMAGE"
+const val EXTRA_PERSON_NAME = "EXTRA_PERSON_NAME"
+const val EXTRA_PERSON_DECSCRIPTION = "EXTRA_PERSON_DECSCRIPTION"
