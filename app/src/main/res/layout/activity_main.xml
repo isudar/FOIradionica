@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/inspiririraju_i_ljudi"
+            android:textColor="#F89"
+            android:textSize="35sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivTuring"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/turing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvTuring"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:minLines="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivTuring"
+            app:layout_constraintTop_toTopOf="@+id/ivTuring" />
+
+        <View
+            android:id="@+id/turingSeparator"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#A9A9A9"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTuring"/>
+
+        <ImageView
+            android:id="@+id/ivBebidz"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/tvTuring"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/bebidz"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/turingSeparator" />
+
+        <TextView
+            android:id="@+id/tvBebidz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:minLines="8"
+            app:layout_constraintTop_toTopOf="@id/ivBebidz"
+            app:layout_constraintStart_toEndOf="@id/ivBebidz"
+            />
+
+        <View
+            android:id="@+id/bebidzSeparator"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#A9A9A9"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBebidz"/>
+
+        <ImageView
+            android:id="@+id/ivGrace"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/grace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bebidzSeparator" />
+
+        <TextView
+            android:id="@+id/tvGrace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minLines="8"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivGrace"
+            app:layout_constraintTop_toTopOf="@+id/ivGrace" />
+
+        <View
+            android:id="@+id/graceSeparator"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#A9A9A9"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGrace"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
